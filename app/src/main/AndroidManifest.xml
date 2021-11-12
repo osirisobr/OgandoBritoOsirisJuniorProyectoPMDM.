@@ -12,12 +12,15 @@
         android:theme="@style/Theme.OgandoBritoOsirisJuniorProyectoPMDM">
         <activity
             android:name=".RegistroActivity"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
-            android:name=".AccesoActivity"
+            android:name=".PeliculasActivity"
+            android:screenOrientation="portrait"
             android:exported="true" />
         <activity
             android:name=".LoginActivity"
+            android:screenOrientation="portrait"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>

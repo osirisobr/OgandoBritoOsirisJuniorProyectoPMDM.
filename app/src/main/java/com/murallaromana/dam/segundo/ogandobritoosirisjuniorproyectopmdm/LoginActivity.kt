@@ -14,13 +14,13 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.Theme_OgandoBritoOsirisJuniorProyectoPMDM)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_login)
         btRegistrarse=findViewById(R.id.btRegistrarse)
         btAcceder=findViewById(R.id.btAcceder)
 
         btAcceder.setOnClickListener(){
 
-            val intent = Intent(this, AccesoActivity::class.java)
+            val intent = Intent(this, PeliculasActivity::class.java)
             startActivity(intent)
         }
 

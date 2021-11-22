@@ -5,18 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/etNombre"
-        android:layout_width="206dp"
-        android:layout_height="18dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="28dp"
-        android:hint="Titulo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivCaratula"
         android:layout_width="120dp"
         android:layout_height="87dp"
         android:layout_marginStart="28dp"
@@ -27,22 +17,31 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/etMote"
+        android:id="@+id/tvGenero"
         android:layout_width="174dp"
         android:layout_height="18dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
         android:hint="Genero"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/ivCaratula"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloAño" />
 
     <TextView
-        android:id="@+id/etCasa"
+        android:id="@+id/tvDirector"
         android:layout_width="123dp"
         android:layout_height="16dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="80dp"
-        android:hint="Director y año"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="12dp"
+        android:hint="Director"
+        app:layout_constraintTop_toBottomOf="@+id/tvGenero"
+        tools:layout_editor_absoluteX="173dp" />
+
+    <TextView
+        android:id="@+id/tvTituloAño"
+        android:layout_width="202dp"
+        android:hint="Titulo (año)"
+        android:layout_height="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

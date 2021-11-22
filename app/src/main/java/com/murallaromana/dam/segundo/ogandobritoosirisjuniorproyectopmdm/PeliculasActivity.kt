@@ -15,6 +15,19 @@ class PeliculasActivity : AppCompatActivity() {
         rvPeliculas=findViewById(R.id.rvPeliculas)
         rvPeliculas.layoutManager = LinearLayoutManager(this)
 
+        val peliculasDao: PeliculasDaoMockImpl = PeliculasDaoMockImpl()
+        val peliculas = peliculasDao.getTodos()
+        var adapter = ListaPeliculasAdapter(peliculas, this)
+
+
+
+
+
+
+
+
+
+
 
 
     }

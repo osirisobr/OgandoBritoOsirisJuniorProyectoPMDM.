@@ -11,17 +11,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OgandoBritoOsirisJuniorProyectoPMDM">
         <activity
-            android:name=".RegistroActivity"
-            android:screenOrientation="portrait"
+            android:name=".DetalleActivity"
             android:exported="true" />
+        <activity
+            android:name=".RegistroActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".PeliculasActivity"
-            android:screenOrientation="portrait"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LoginActivity"
-            android:screenOrientation="portrait"
             android:exported="true"
+            android:screenOrientation="portrait"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

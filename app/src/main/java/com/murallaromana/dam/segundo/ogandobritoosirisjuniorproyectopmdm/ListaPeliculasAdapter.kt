@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import java.nio.file.Files.size
 
 class ListaPeliculasAdapter(val peliculas : List<Pelicula>, val context: Context) : RecyclerView.Adapter<ListaPeliculasAdapter.PeliculaHolder>() {
@@ -31,6 +32,11 @@ class ListaPeliculasAdapter(val peliculas : List<Pelicula>, val context: Context
 
         holder.tvTitulo.setText(Pelicula.titulo)
         holder.tvGenero.setText(Pelicula.genero)
+
+        Picasso.get().load(Pelicula.url).into(holder.ivCaratula)
+
+
+
     }
 
     override fun getItemCount(): Int{

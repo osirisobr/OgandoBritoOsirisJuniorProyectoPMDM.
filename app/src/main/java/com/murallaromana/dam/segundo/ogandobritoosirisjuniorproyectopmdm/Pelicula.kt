@@ -6,7 +6,8 @@ class Pelicula(
     var titulo: String,
     var genero: String,
     var director: String,
-    var año: Int
+    var año: Int,
+    var url: String
 
 ): Serializable {
 

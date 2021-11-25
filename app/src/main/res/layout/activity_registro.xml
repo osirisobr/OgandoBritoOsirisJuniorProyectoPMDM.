@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etUsuario"
+        android:id="@+id/etUsuarioR"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margen_horizontal_entre_edTexts"
@@ -37,7 +37,7 @@
         app:layout_constraintTop_toBottomOf="@+id/etNombreComplet" />
 
     <EditText
-        android:id="@+id/etComtraseña"
+        android:id="@+id/etContraseñaR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"
@@ -58,7 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etUsuario" />
+        app:layout_constraintTop_toBottomOf="@+id/etUsuarioR" />
 
     <EditText
         android:id="@+id/etTelefono"
@@ -70,14 +70,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etComtraseña" />
+        app:layout_constraintTop_toBottomOf="@+id/etContraseñaR" />
 
     <Button
         android:id="@+id/btHacerEfectivoRegistro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="121dp"
+        android:layout_height="39dp"
         android:layout_marginTop="50dp"
         android:text="Registrar"
+        android:backgroundTint="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTelefono" />

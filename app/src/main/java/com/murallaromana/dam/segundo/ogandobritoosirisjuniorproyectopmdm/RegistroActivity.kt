@@ -23,25 +23,22 @@ class RegistroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
 
-
-
-
-
-
         btHacerEfectivoRegistro=findViewById(R.id.btHacerEfectivoRegistro)
+        etUsuarioR=findViewById(R.id.etUsuarioR)
+        etContraseñaR=findViewById(R.id.etContraseñaR)
         sharedPreferences = getSharedPreferences("SHARED_PREF", Context.MODE_PRIVATE)
 
         btHacerEfectivoRegistro.setOnClickListener(){
-        Toast.makeText(this,"Informacion Guardada" ,Toast.LENGTH_LONG).show()
+
             val nombre: String = etUsuarioR.text.toString()
          val contraseña: String = etContraseñaR.text.toString()
          val editor: SharedPreferences.Editor = sharedPreferences.edit()
          editor.putString("NOMBRE",nombre)
          editor.putString("CONTRASEÑA",contraseña)
          editor.apply()
+            Toast.makeText(this,"Informacion Guardada" ,Toast.LENGTH_LONG).show()
 
-
-            val intent = Intent(this, PeliculasActivity:: class.java)
+            val intent = Intent(this, LoginActivity:: class.java)
             startActivity(intent)
 
 
